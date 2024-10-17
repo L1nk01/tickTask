@@ -1,21 +1,22 @@
 <script setup>
+import TaskContainer from './components/TaskContainer.vue';
+import TimeContainer from './components/TimeContainer.vue';
 </script>
 
 <template>
-  a
+  <h1 id="title">tickTask</h1>
+  <div class="app-container">
+    <TaskContainer />
+    <TimeContainer />
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.app-container {
+  min-height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 30px;
 }
 </style>
